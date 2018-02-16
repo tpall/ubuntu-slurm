@@ -38,9 +38,10 @@ $ git clone https://github.com/mknoxnv/ubuntu-slurm.git
 
 Customize slurm.conf with your slurm controller and compute node hostnames:
 ```console
-$ vi ubuntu-slurm/slurm.conf
+$ apt-get install nano
+$ nano ubuntu-slurm/slurm.conf
 ControlMachine=slurm-ctrl
-NodeName=linux1 (you can specify a range of nodes here, for example: linux[1-10])
+NodeName=linux[1-2] (you can specify a range of nodes here, for example: linux[1-10])
 ```
 
 ### Install munge
@@ -51,14 +52,6 @@ Ubuntu 16.04
 ```console
 $ apt-get install libmunge-dev libmunge2 munge
 $ systemctl enable munge
-$ systemctl start munge
-```
-
-Ubuntu 14.04
-```console
-$ apt-get install libmunge-dev libmunge2 munge
-$ create-munge-key
-$ update-rc.d munge enable
 $ service munge start
 ```
 
@@ -78,7 +71,7 @@ Ubuntu 16.04
 ```console
 $ apt-get install mariadb-server
 $ systemctl enable mysql
-$ systemctl start mysql
+$ service mysql start
 $ mysql -u root
 create database slurm_acct_db;
 create user 'slurm'@'localhost';
