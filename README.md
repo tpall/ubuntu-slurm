@@ -26,7 +26,7 @@ Install prerequisites
 Ubuntu 16.04
 ```console
 $ apt-get update
-$ apt-get install git wget gcc bzip2 nano make ruby ruby-dev python libpam0g-dev libmariadb-client-lgpl-dev libmysqlclient-dev libffi-dev
+$ apt-get install -y git wget gcc bzip2 nano make ruby ruby-dev python libpam0g-dev libmariadb-client-lgpl-dev libmysqlclient-dev libffi-dev
 $ gem install fpm
 ```
 ### Copy git repo
