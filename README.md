@@ -68,7 +68,7 @@ In the following steps change the DB password "slurmdbpass" to something secure.
 
 Ubuntu 16.04
 ```console
-$ apt-get install mariadb-server
+$ apt-get install -y mariadb-server
 $ #systemctl enable mysql
 $ service mysql start
 $ mysql -u root
