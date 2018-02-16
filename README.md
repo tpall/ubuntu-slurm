@@ -33,7 +33,7 @@ $ gem install fpm
 ```console
 $ mkdir /downloads
 $ cd /downloads
-$ git clone https://github.com/mknoxnv/ubuntu-slurm.git
+$ git https://github.com/tpall/ubuntu-slurm.git
 ```
 
 Customize slurm.conf with your slurm controller and compute node hostnames:
