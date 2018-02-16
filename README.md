@@ -26,7 +26,7 @@ Install prerequisites
 Ubuntu 16.04
 ```console
 $ apt-get update
-$ apt-get install git gcc make ruby ruby-dev libpam0g-dev libmariadb-client-lgpl-dev libmysqlclient-dev
+$ apt-get install git gcc make ruby ruby-dev libpam0g-dev libmariadb-client-lgpl-dev libmysqlclient-dev libffi-dev
 $ gem install fpm
 ```
 Ubuntu 14.04
